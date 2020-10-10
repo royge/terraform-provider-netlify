@@ -13,6 +13,31 @@ Requirements
 -	[Terraform](https://www.terraform.io/downloads.html) 0.10.x
 -	[Go](https://golang.org/doc/install) 1.8 (to build the provider plugin)
 
+Installation
+------------
+
+**NOTE:** This is not an official provider's repo. Installation would be different.
+
+1. Download pre-built binary
+
+On Mac
+
+```sh
+$ curl -o terraform-provider-netlify_v0.4.1_x4 https://github.com/royge/terraform-provider-netlify/releases/download/v0.4.1/terraform-provider-netlify_v0.4.1_x4.darwin-amd64
+```
+
+On Linux
+
+```sh
+$ curl -o terraform-provider-netlify_v0.4.1_x4 https://github.com/royge/terraform-provider-netlify/releases/download/v0.4.1/terraform-provider-netlify_v0.4.1_x4.linux-amd64
+```
+
+2. Make executable and move into plugins directory
+
+```sh
+$ chmod +x terraform-provider-netlify_v0.4.1_x4 && mv terraform-provider-netlify_v0.4.1_x4 ~/.terraform.d/plugins/
+```
+
 Building The Provider
 ---------------------
 
